@@ -24,7 +24,7 @@ export default function Gallery() {
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {Array.from({ length: 8 }).map((_, i) => (
+        {Array.from({ length: 8 }).map((_, i) => (
               <GalleryItem 
                 key={i}
                 title={`Style ${i + 1}`}

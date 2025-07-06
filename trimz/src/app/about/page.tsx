@@ -232,7 +232,7 @@ function UserIcon({ className = '' }) {
     <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <circle cx="12" cy="8" r="4" strokeWidth={2} />
       <path d="M4 20c0-4 8-4 8-4s8 0 8 4" strokeWidth={2} />
-    </svg>
+        </svg>
   );
 }
 

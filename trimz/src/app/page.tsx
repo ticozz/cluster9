@@ -216,7 +216,7 @@ export default function Home() {
             </p>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="aspect-square bg-[#d1cfcb] rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300 relative">
               <Image src="/gallery1.jpg" alt="Modern Fade Haircut" fill style={{objectFit: 'cover'}} className="rounded-lg" />
             </div>
@@ -286,7 +286,7 @@ function ServiceCard({ title, price, description, icon }: { title: string, price
       <div className="flex items-center justify-between mb-6">
         <div className="text-[#3f1d1d]">{icon}</div>
         <span className="text-lg font-bold text-[#3f1d1d] bg-[#ecebe9] px-4 py-1 rounded-full shadow-sm ml-4">{price}</span>
-      </div>
+    </div>
       <h3 className="text-2xl font-lobster text-left mb-2">{title}</h3>
       <p className="text-[#a1a19f] text-left mb-2 flex-1">{description}</p>
     </div>

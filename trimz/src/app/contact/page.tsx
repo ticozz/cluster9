@@ -226,7 +226,7 @@ export default function Contact() {
               </button>
             </div>
           </form>
-        </div>
+      </div>
       </section>
 
       {/* CTA Section */}
@@ -243,7 +243,7 @@ export default function Contact() {
             <a href="https://wa.me/966501234567" target="_blank" rel="noopener noreferrer" className="px-8 py-4 border-2 border-white text-white font-semibold text-lg rounded-full hover:bg-white hover:text-[#3f1d1d] transition duration-300">
               WhatsApp
             </a>
-          </div>
+      </div>
         </div>
       </section>
     </div>

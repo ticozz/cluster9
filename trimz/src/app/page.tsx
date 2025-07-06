@@ -1,82 +1,10 @@
 import Image from 'next/image';
-import { ScissorsIcon, BeardIcon, RazorIcon, CombIcon } from './components/BarberIcons';
+import { ScissorsIcon, BeardIcon, RazorIcon } from './components/BarberIcons';
 
 function CalendarIcon({ className = '' }: { className?: string }) {
   return (
     <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-    </svg>
-  );
-}
-
-function BarbershopIcon({ className = '' }: { className?: string }) {
-  return (
-    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      {/* Barber pole stripes */}
-      <rect x="8" y="4" width="8" height="16" stroke="currentColor" strokeWidth={2} fill="none" />
-      <line x1="8" y1="6" x2="16" y2="6" stroke="currentColor" strokeWidth={2} />
-      <line x1="8" y1="10" x2="16" y2="10" stroke="currentColor" strokeWidth={2} />
-      <line x1="8" y1="14" x2="16" y2="14" stroke="currentColor" strokeWidth={2} />
-      <line x1="8" y1="18" x2="16" y2="18" stroke="currentColor" strokeWidth={2} />
-      {/* Barber pole top and bottom */}
-      <circle cx="12" cy="2" r="2" stroke="currentColor" strokeWidth={2} fill="none" />
-      <circle cx="12" cy="22" r="2" stroke="currentColor" strokeWidth={2} fill="none" />
-    </svg>
-  );
-}
-
-function HairDryerIcon({ className = '' }: { className?: string }) {
-  return (
-    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      {/* Hair dryer body */}
-      <ellipse cx="12" cy="12" rx="8" ry="4" stroke="currentColor" strokeWidth={2} fill="none" />
-      {/* Hair dryer handle */}
-      <rect x="16" y="10" width="4" height="4" rx="1" stroke="currentColor" strokeWidth={2} fill="none" />
-      {/* Air flow lines */}
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M4 10L2 8M4 12L2 14M4 14L2 16" />
-    </svg>
-  );
-}
-
-function MirrorIcon({ className = '' }: { className?: string }) {
-  return (
-    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      {/* Mirror frame */}
-      <rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" strokeWidth={2} fill="none" />
-      {/* Mirror reflection */}
-      <ellipse cx="12" cy="12" rx="6" ry="6" stroke="currentColor" strokeWidth={1} fill="none" />
-      {/* Mirror stand */}
-      <rect x="11" y="20" width="2" height="4" stroke="currentColor" strokeWidth={2} fill="none" />
-    </svg>
-  );
-}
-
-function TowelIcon({ className = '' }: { className?: string }) {
-  return (
-    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      {/* Towel */}
-      <rect x="4" y="6" width="16" height="12" rx="1" stroke="currentColor" strokeWidth={2} fill="none" />
-      {/* Towel texture */}
-      <line x1="6" y1="8" x2="18" y2="8" stroke="currentColor" strokeWidth={1} />
-      <line x1="6" y1="10" x2="18" y2="10" stroke="currentColor" strokeWidth={1} />
-      <line x1="6" y1="12" x2="18" y2="12" stroke="currentColor" strokeWidth={1} />
-      <line x1="6" y1="14" x2="18" y2="14" stroke="currentColor" strokeWidth={1} />
-      <line x1="6" y1="16" x2="18" y2="16" stroke="currentColor" strokeWidth={1} />
-    </svg>
-  );
-}
-
-function ClipperIcon({ className = '' }: { className?: string }) {
-  return (
-    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      {/* Clipper body */}
-      <rect x="6" y="8" width="12" height="8" rx="1" stroke="currentColor" strokeWidth={2} fill="none" />
-      {/* Clipper blade */}
-      <rect x="8" y="6" width="8" height="2" stroke="currentColor" strokeWidth={2} fill="none" />
-      {/* Clipper handle */}
-      <rect x="10" y="16" width="4" height="6" rx="1" stroke="currentColor" strokeWidth={2} fill="none" />
-      {/* Clipper button */}
-      <circle cx="12" cy="19" r="1" stroke="currentColor" strokeWidth={1} fill="none" />
     </svg>
   );
 }
@@ -184,7 +112,7 @@ export default function Home() {
                 Founded with a passion for excellence, Trimz brings the finest barbering traditions to modern Saudi Arabia. Our skilled barbers combine time-honored techniques with contemporary style to deliver exceptional results.
               </p>
               <p className="text-lg text-[#a1a19f] mb-8">
-                We believe every client deserves more than just a haircut – they deserve an experience. From the moment you walk in, you'll feel the difference that quality, attention to detail, and genuine care make.
+                We believe every client deserves more than just a haircut – they deserve an experience. From the moment you walk in, you&apos;ll feel the difference that quality, attention to detail, and genuine care make.
               </p>
               <a href="/about" className="inline-block px-8 py-3 border-2 border-[#3f1d1d] text-[#3f1d1d] font-semibold rounded-full hover:bg-[#3f1d1d] hover:text-white transition duration-300">
                 Learn More
@@ -257,26 +185,6 @@ export default function Home() {
         </div>
       </section>
     </div>
-  );
-}
-
-function Logo({ className = '' }) {
-  return (
-    <svg viewBox="0 0 220 180" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
-      {/* Scissors */}
-      <g stroke="currentColor" strokeWidth="5" strokeLinecap="round">
-        <line x1="110" y1="40" x2="80" y2="80" />
-        <line x1="110" y1="40" x2="140" y2="80" />
-        <circle cx="80" cy="80" r="7" />
-        <circle cx="140" cy="80" r="7" />
-      </g>
-      {/* TRIMZ text */}
-      <text x="50%" y="120" textAnchor="middle" fontFamily="Playfair Display, serif" fontWeight="bold" fontSize="48" fill="currentColor">TRIMZ</text>
-      {/* Arched Barber Shop */}
-      <text x="50%" y="70" textAnchor="middle" fontFamily="Playfair Display, serif" fontSize="18" fill="currentColor" fontStyle="italic">BARBER SHOP</text>
-      {/* Stay Trimmed */}
-      <text x="50%" y="150" textAnchor="middle" fontFamily="Montserrat, sans-serif" fontSize="16" fill="currentColor">STAY TRIMMED</text>
-    </svg>
   );
 }
 

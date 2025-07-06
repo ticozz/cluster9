@@ -109,7 +109,7 @@ export default function Contact() {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-serif italic mb-4">Book Your Appointment</h2>
             <p className="text-lg text-[#a1a19f] max-w-2xl mx-auto">
-              Fill out the form below and we'll get back to you to confirm your appointment
+              Fill out the form below and we&apos;ll get back to you to confirm your appointment
             </p>
           </div>
           
@@ -232,7 +232,7 @@ export default function Contact() {
       {/* CTA Section */}
       <section className="py-20 bg-[#3f1d1d] text-white">
         <div className="max-w-4xl mx-auto text-center px-4">
-          <h2 className="text-4xl font-serif italic mb-6">Can't Wait to See You</h2>
+          <h2 className="text-4xl font-serif italic mb-6">Can&apos;t Wait to See You</h2>
           <p className="text-xl text-[#a1a19f] mb-8 max-w-2xl mx-auto">
             Walk-ins are always welcome, or call us directly for immediate assistance.
           </p>

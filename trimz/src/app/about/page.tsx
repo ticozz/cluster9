@@ -31,7 +31,7 @@ export default function About() {
             More than just a barbershop
           </p>
           <p className="text-lg md:text-xl text-[#d1cfcb] max-w-2xl mx-auto animate-fade-in-up" style={{animationDelay: '0.4s'}}>
-            We're a destination for style, tradition, and excellence in Saudi Arabia.
+            We&apos;re a destination for style, tradition, and excellence in Saudi Arabia.
           </p>
         </div>
       </section>
@@ -55,13 +55,13 @@ export default function About() {
             <div>
               <h2 className="text-5xl md:text-6xl font-lobster mb-8 tracking-tight">Our Story</h2>
               <p className="text-xl text-[#a1a19f] mb-6 leading-relaxed">
-                Trimz was born from a simple belief: every man deserves to look and feel his best. Founded in Saudi Arabia, we've created a space where traditional barbering meets modern style.
+                Trimz was born from a simple belief: every man deserves to look and feel his best. Founded in Saudi Arabia, we&apos;ve created a space where traditional barbering meets modern style.
               </p>
               <p className="text-xl text-[#a1a19f] mb-6 leading-relaxed">
-                Our journey began with a passion for the craft and a commitment to excellence. We've built a team of skilled barbers who understand that a great haircut is more than just cutting hair – it's about creating confidence and style.
+                Our journey began with a passion for the craft and a commitment to excellence. We&apos;ve built a team of skilled barbers who understand that a great haircut is more than just cutting hair – it&apos;s about creating confidence and style.
               </p>
               <p className="text-xl text-[#a1a19f] leading-relaxed">
-                Today, Trimz stands as a premier destination for men's grooming, combining time-honored techniques with contemporary trends to deliver exceptional results.
+                Today, Trimz stands as a premier destination for men&apos;s grooming, combining time-honored techniques with contemporary trends to deliver exceptional results.
               </p>
             </div>
             <div className="relative">
@@ -103,7 +103,7 @@ export default function About() {
             />
             <ValueCard 
               title="Community"
-              description="We're more than a barbershop – we're a gathering place where men can connect and feel at home."
+              description="We&apos;re more than a barbershop – we&apos;re a gathering place where men can connect and feel at home."
               icon={<CommunityIcon className="w-16 h-16 text-[#3f1d1d] mx-auto" />} 
             />
           </div>
@@ -160,7 +160,7 @@ export default function About() {
         <div className="max-w-4xl mx-auto text-center px-4">
           <h2 className="text-5xl md:text-6xl font-lobster mb-6 tracking-tight">Experience the Difference</h2>
           <p className="text-xl text-[#a1a19f] mb-8 max-w-2xl mx-auto">
-            Come visit us and see why Trimz is the preferred choice for men's grooming in Saudi Arabia.
+            Come visit us and see why Trimz is the preferred choice for men&apos;s grooming in Saudi Arabia.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="/services" className="px-8 py-4 bg-white text-[#3f1d1d] font-semibold text-lg rounded-full hover:bg-[#d1cfcb] transition duration-300">
@@ -173,22 +173,6 @@ export default function About() {
         </div>
       </section>
     </div>
-  );
-}
-
-function BarbershopIcon({ className = '' }) {
-  return (
-    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      {/* Barber pole stripes */}
-      <rect x="8" y="4" width="8" height="16" stroke="currentColor" strokeWidth={2} fill="none" />
-      <line x1="8" y1="6" x2="16" y2="6" stroke="currentColor" strokeWidth={2} />
-      <line x1="8" y1="10" x2="16" y2="10" stroke="currentColor" strokeWidth={2} />
-      <line x1="8" y1="14" x2="16" y2="14" stroke="currentColor" strokeWidth={2} />
-      <line x1="8" y1="18" x2="16" y2="18" stroke="currentColor" strokeWidth={2} />
-      {/* Barber pole top and bottom */}
-      <circle cx="12" cy="2" r="2" stroke="currentColor" strokeWidth={2} fill="none" />
-      <circle cx="12" cy="22" r="2" stroke="currentColor" strokeWidth={2} fill="none" />
-    </svg>
   );
 }
 

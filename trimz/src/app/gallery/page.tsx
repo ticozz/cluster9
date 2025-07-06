@@ -29,7 +29,6 @@ export default function Gallery() {
                 key={i}
                 title={`Style ${i + 1}`}
                 category="Haircuts"
-                image={`/gallery/haircut-${i + 1}.jpg`}
               />
             ))}
           </div>
@@ -93,17 +92,14 @@ export default function Gallery() {
             <TeamGalleryItem 
               name="Ahmed Al-Rashid"
               role="Master Barber"
-              image="/team/ahmed.jpg"
             />
             <TeamGalleryItem 
               name="Omar Hassan"
               role="Senior Barber"
-              image="/team/omar.jpg"
             />
             <TeamGalleryItem 
               name="Khalid Ibrahim"
               role="Barber"
-              image="/team/khalid.jpg"
             />
           </div>
         </div>
@@ -122,13 +118,9 @@ export default function Gallery() {
           <div className="grid md:grid-cols-2 gap-8">
             <TransformationItem 
               title="Classic Fade"
-              beforeImage="/transformations/fade-before.jpg"
-              afterImage="/transformations/fade-after.jpg"
             />
             <TransformationItem 
               title="Beard Styling"
-              beforeImage="/transformations/beard-before.jpg"
-              afterImage="/transformations/beard-after.jpg"
             />
           </div>
         </div>
@@ -155,7 +147,7 @@ export default function Gallery() {
   );
 }
 
-function GalleryItem({ title, category, image }: { title: string, category: string, image: string }) {
+function GalleryItem({ title, category }: { title: string, category: string }) {
   return (
     <div className="group relative aspect-square bg-[#d1cfcb] rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
       <div className="absolute inset-0 flex items-center justify-center">
@@ -172,7 +164,7 @@ function GalleryItem({ title, category, image }: { title: string, category: stri
   );
 }
 
-function TeamGalleryItem({ name, role, image }: { name: string, role: string, image: string }) {
+function TeamGalleryItem({ name, role }: { name: string, role: string }) {
   return (
     <div className="text-center group">
       <div className="relative aspect-square bg-[#d1cfcb] rounded-lg shadow-lg mb-6 overflow-hidden">
@@ -195,7 +187,7 @@ function TeamGalleryItem({ name, role, image }: { name: string, role: string, im
   );
 }
 
-function TransformationItem({ title, beforeImage, afterImage }: { title: string, beforeImage: string, afterImage: string }) {
+function TransformationItem({ title }: { title: string }) {
   return (
     <div className="bg-white rounded-lg shadow-lg p-6">
       <h3 className="text-2xl font-semibold text-[#3f1d1d] mb-6 text-center">{title}</h3>

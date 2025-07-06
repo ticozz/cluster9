@@ -330,7 +330,7 @@ function ServiceItem({ title, price, duration, description, features, popular = 
       </div>
       <p className="text-[#a1a19f] text-base mt-2">{description}</p>
       <div className="pt-4">
-        <h4 className="font-semibold text-[#3f1d1d] mb-2">What's Included:</h4>
+        <h4 className="font-semibold text-[#3f1d1d] mb-2">What&apos;s Included:</h4>
         <ul className="space-y-2">
           {features.map((feature, index) => (
             <li key={index} className="flex items-center text-[#a1a19f]">

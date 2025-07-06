@@ -2,9 +2,6 @@ import type { Metadata } from "next";
 import Link from 'next/link';
 import "./globals.css";
 
-// Add Google Fonts for beach-style wavy font
-const scriptFont = "https://fonts.googleapis.com/css2?family=Great+Vibes:wght@400&family=Alex+Brush&family=Allura&family=Berkshire+Swash&display=swap";
-
 function Logo({ className = '' }: { className?: string }) {
   return (
     <svg viewBox="0 0 220 180" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
